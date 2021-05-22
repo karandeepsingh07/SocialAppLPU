@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpFaculty">
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-87dp"
+        android:layout_marginBottom="-40dp"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/circleTes"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-50dp"
+        android:src="@drawable/circletransperent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/colorPurple"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svr">
+        <RelativeLayout
+            android:id="@+id/rlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:id="@+id/cvr">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/rlr">
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Email"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:id="@+id/etEmailFacultyS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvEmail"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:drawablePadding="30dp"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp" />
+                    <TextView
+                        android:id="@+id/tvUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etEmailFacultyS"
+                        android:layout_margin="15dp"
+                        android:text="Username"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etUsernameFacultyS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvUsername"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:drawablePadding="30dp"
+                        android:inputType="text"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvPasswordFacultyS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etUsernameFacultyS"
+                        android:layout_margin="15dp"
+                        android:text="Password"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etPasswordFacultyS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPasswordFacultyS"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:drawablePadding="30dp"
+                        android:inputType="textPassword"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvRegistrationIdFacultyS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etPasswordFacultyS"
+                        android:layout_margin="15dp"
+                        android:text="Registration Number"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etRegistrationIdFacultyS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvRegistrationIdFacultyS"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:drawablePadding="30dp"
+                        android:inputType="number"
+                        android:padding="10dp" />
+                    <TextView
+                        android:id="@+id/tvSeetingFacultyS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etRegistrationIdFacultyS"
+                        android:layout_margin="15dp"
+                        android:text="Seeting"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etSeetingFacultyS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvSeetingFacultyS"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:drawablePadding="30dp"
+                        android:padding="10dp" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/FacultyDepartmentList"
+                        android:entries="@array/departments"
+                        android:layout_margin="15dp"
+                        android:layout_below="@id/etSeetingFacultyS"
+                        android:drawablePadding="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:padding="10dp"
+                        ></Spinner>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/btSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvr"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bt_uisquare"
+                android:text="SignUp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="2dp"></Button>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_below="@id/btSignup"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

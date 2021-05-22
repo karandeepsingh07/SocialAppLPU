@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-87dp"
+        android:layout_marginBottom="-40dp"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/circleTes"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-50dp"
+        android:src="@drawable/circletransperent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/SignupOrg"
+        android:textColor="@color/colorPurple"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="55dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SignupOrg"
+        android:text="Organization"
+        android:textColor="@color/colorPurpleT"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        ></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svr">
+        <RelativeLayout
+            android:id="@+id/rlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                android:id="@+id/cvr">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/rlr">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_person"
+                        android:id="@+id/updateLogoORG"
+                        ></de.hdodenhof.circleimageview.CircleImageView>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/updateLogoORG"
+                        android:id="@+id/etORGName"
+                        android:hint="Name"
+                        android:textColor="@color/colorPurple"
+                        android:textStyle="bold"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        ></EditText>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/etNameCEO"
+                        android:layout_below="@id/etORGName"
+                        android:hint="CEO Name"
+                        android:textColor="@color/colorPurple"
+                        android:textStyle="bold"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        ></EditText>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/etCoCeoName"
+                        android:hint="Co-Ceo name"
+                        android:textColor="@color/colorPurple"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/etNameCEO"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        ></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/etCultSecName"
+                        android:hint="Cultural Secretory name"
+                        android:textColor="@color/colorPurple"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/etCoCeoName"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        ></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/etCultSecName"
+                        android:hint="Enter Email"
+                        android:id="@+id/etorgEmail"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPurple"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+
+                        ></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/etorgEmail"
+                        android:hint="Enter Password"
+                        android:id="@+id/etorgPassword"
+                        android:inputType="text"
+                        android:textStyle="bold"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPurple"
+                        ></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/etorgPassword"
+                        android:hint="Enter Tier"
+                        android:id="@+id/etorgTier"
+                        android:inputType="number"
+                        android:textStyle="bold"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPurple"
+                        ></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/etorgTier"
+                        android:hint="Enter Domain"
+                        android:id="@+id/etorgDomain"
+                        android:inputType="text"
+                        android:textStyle="bold"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPurple"
+                        ></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/etorgDomain"
+                        android:hint="Enter Contact"
+                        android:id="@+id/etorgContact"
+                        android:inputType="text"
+                        android:textStyle="bold"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPurple"
+                        ></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@id/etorgContact"
+                        android:hint="About Us...."
+                        android:id="@+id/etorgDescription"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPurple"
+                        ></EditText>
+
+                    <Button
+                        android:id="@+id/btSignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etorgDescription"
+                        android:background="@drawable/bt_uisquare"
+                        android:text="Sign Up"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="10dp"></Button>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_below="@id/cvr"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

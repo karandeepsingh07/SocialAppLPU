@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orgProfile">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher_background"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/Dp"
+    ></ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Dp"
+        android:layout_marginTop="20dp"
+
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="name"
+            android:id="@+id/name"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C.E.O. ="
+            android:id="@+id/ceo"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="10dp"
+            ></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/ceo"
+            android:id="@+id/ceoEdit"
+            android:paddingLeft="10dp"
+            ></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date ="
+            android:id="@+id/startDate"
+            android:layout_below="@id/ceo"
+            android:layout_marginTop="20dp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ceoEdit"
+            android:layout_toRightOf="@id/startDate"
+            android:id="@+id/startEdit"
+            android:paddingLeft="10dp"
+            ></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tier ="
+            android:id="@+id/tier"
+            android:layout_below="@id/startDate"
+            android:layout_marginTop="20dp"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startEdit"
+            android:layout_toRightOf="@id/tier"
+            android:paddingLeft="10dp"
+            android:id="@+id/tierEdit"
+            ></EditText>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/tierEdit"></Button>
+    </RelativeLayout>
+
+</RelativeLayout>

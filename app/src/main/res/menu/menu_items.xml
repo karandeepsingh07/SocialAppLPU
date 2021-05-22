@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Announcement"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_comment_black"
+        android:id="@+id/announcement"/>
+    <item android:id="@+id/search"
+        android:title="Search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_black_24dp"/>
+    <item android:id="@+id/LOGOUT"
+        android:icon="@drawable/ic_logout"
+        android:title="Sign Out"/>
+
+</menu>

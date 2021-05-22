@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnnouncementUploadFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/editTextAnnTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Announcement Title"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextAnnDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Announcement Description"
+            android:padding="10dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:gravity="start"
+            android:layout_marginTop="25dp"
+            android:minHeight="120dp" />
+
+        <Button
+            android:id="@+id/buttonAnnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bt_uisquare"
+            android:text="Upload Announcement"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

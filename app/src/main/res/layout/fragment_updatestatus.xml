@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue">
+
+    <ImageView
+        android:id="@+id/statusImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageButton
+        android:id="@+id/statusChooseImageButton"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:padding="20dp"
+        android:background="@drawable/bt_uisquare"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"/>
+
+    <ImageButton
+        android:id="@+id/statusUploadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bt_uisquare"
+        android:padding="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/ic_send_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:text="Upload Image"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>

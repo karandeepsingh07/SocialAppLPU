@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/Home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"></item>
+        <item android:id="@+id/ViewProfile"
+            android:icon="@drawable/ic_viewprofile"
+            android:title="View Profile"
+            ></item>
+        <item android:id="@+id/UpdateStatus"
+            android:icon="@drawable/ic_updatestatus"
+            android:title="Upload Status"></item>
+        <item android:id="@+id/Uploadpost"
+            android:icon="@drawable/ic_postupload"
+            android:title="Upload post"></item>
+        <item android:id="@+id/Uploadasssign"
+            android:icon="@drawable/ic_postupload"
+            android:title="Upload Announcement"></item>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"></item>
+        </menu>
+    </item>
+    <item android:title="Password">
+        <menu>
+
+            <item android:id="@+id/changePassword"
+                android:icon="@drawable/ic_lock"
+                android:title="Change Password"></item>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "487120288931",
+    "firebase_url": "https://recyclenev-e79f0.firebaseio.com",
+    "project_id": "recyclenev-e79f0",
+    "storage_bucket": "recyclenev-e79f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487120288931:android:966fd08ee54ac402d49316",
+        "android_client_info": {
+          "package_name": "com.example.recyclenev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487120288931-ul5j6snm805cssve3n1gsu4tnd98pai6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recyclenev",
+            "certificate_hash": "f3d1580536e2d152e8602471acbd23264bf27238"
+          }
+        },
+        {
+          "client_id": "487120288931-f317udk0o2s1akm6c7sl9aa2hsgombbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAb7x1FHsZf1RIQjEMuOVhWNMM79-G5lY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487120288931-f317udk0o2s1akm6c7sl9aa2hsgombbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrganizationUpdate">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/updatetool"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/planheader">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/updateLogo"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/uploadLogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/ic_add"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/updateLogo"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:text="Organization"
+            android:id="@+id/OrganizationName"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="20dp"></TextView>
+    </RelativeLayout>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/update"
+        android:background="@drawable/circle"
+        android:src="@drawable/ic_done"
+        android:onClick="click"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"></ImageButton>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/updatetool"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rlayoute"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlr">
+
+                <TextView
+                    android:id="@+id/Tier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Tier:            "
+                    android:textColor="@color/colorPurple"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etTier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/Tier"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etTier"
+                    android:text="Domain:     "
+                    android:textSize="14sp"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/colorPurple"
+                    android:textStyle="bold"
+                    android:id="@+id/Domain"></TextView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etDomain"
+                    android:layout_toRightOf="@id/Domain"
+                    android:inputType="text"
+                    android:layout_below="@id/etTier"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"></EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etDomain"
+                    android:text="Contact:     "
+                    android:textSize="14sp"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/colorPurple"
+                    android:textStyle="bold"
+                    android:id="@+id/Contact"></TextView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/Contact"
+                    android:id="@+id/etContact"
+                    android:inputType="text"
+                    android:layout_below="@id/etDomain"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"></EditText>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etContact"
+                    android:text=" C.E.O. Name:"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/colorPurple"
+                    android:textStyle="bold"
+                    android:id="@+id/orgCEO"></TextView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/orgCEO"
+                    android:inputType="text"
+                    android:layout_below="@id/etContact"
+                    android:id="@+id/etCEO"
+                    android:padding="10dp"
+                    android:layout_marginTop="2dp"></EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etCEO"
+                    android:text="Board members: "
+                    android:layout_margin="15dp"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorPurple"
+                    android:textStyle="bold"
+                    android:id="@+id/member"></TextView>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/member"
+                    android:layout_below="@id/etCEO"
+                    android:layout_marginTop="17dp"
+                    android:id="@+id/memRl"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1."
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="16sp"
+                        android:id="@+id/m1"></TextView>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/m1"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/etm1"></EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2."
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="16sp"
+                        android:layout_below="@id/etm1"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/m2"></TextView>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/m2"
+                        android:layout_below="@id/etm1"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/etm2"></EditText>
+
+                </RelativeLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/memRl"
+                    android:inputType="textAutoComplete|textMultiLine"
+                    android:hint="Write Organization Description here.."
+                    android:id="@+id/etDescription"
+                    android:isScrollContainer="true"
+                    android:textColor="@color/colorPurple"
+                    android:minLines="6"
+                    android:maxLines="6"></EditText>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
